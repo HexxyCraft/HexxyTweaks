@@ -1,6 +1,6 @@
 # HexxyTweaks
 
-Tweaks for the HexxyCraft modpack.
+Fabric mod providing tweaks for the HexxyCraft modpack.
 
 ## Tweaks
 
