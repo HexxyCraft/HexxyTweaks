@@ -1,34 +1,17 @@
-# Create Fabric Addon Template
+# HexxyTweaks
 
-This template mod comes pre-configured for developing an addon mod for Create on Fabric.
+Tweaks for the HexxyCraft modpack.
 
+## Tweaks
 
-## Setup
+TODO
 
-This template is an extension of the base [Fabric Example Mod](https://github.com/FabricMC/fabric-example-mod).
-Setup is mostly the same.
+## Icon
 
-Additionally, set `recipe_viewer` in [gradle.properties](gradle.properties). Remember to remove unused
-example code. Make sure versions are up-to-date.
+Hexxy was created by ClockworkVulpine on Discord.
 
-When you publish your mod, you should use jars provided by GitHub Actions. These jars will have
-build number metadata and will be compressed by the Machete plugin.
+"[Cog1](https://www.svgrepo.com/svg/509628/cog1)" by [WeAreHeroes](https://www.weareheroes.digital/resources/drawicons) is licensed under [CC BY](https://creativecommons.org/licenses/by/2.0/).
 
-## Features
-- Access to Create and all of its dependencies
-- Mojang Mappings base, with Quilt Mappings and Parchment providing Javadoc and parameters
-- QuiltFlower decompiler for high quality Minecraft sources: `gradlew genSourcesWithQuiltflower`
-- GitHub Actions automatic build workflow
-- Machete Gradle plugin to shrink jar file sizes
-- Developer QOL: Mod Menu, LazyDFU, recipe viewers
+## Template
 
-## Other Templates
-- [Multi-loader template](https://github.com/Fabricators-of-Create/create-multiloader-addon-template)
-- [Forge-only template](https://github.com/kotakotik22/CreateAddonTemplate)
-
-## Help
-Questions? Join us in the #devchat channel of the [Create Discord](https://discord.com/invite/hmaD7Se).
-
-## License
-
-This template is available under the CC0 license. Feel free to do as you wish with it.
+https://github.com/Fabricators-of-Create/create-fabric-addon-template/tree/1.19
