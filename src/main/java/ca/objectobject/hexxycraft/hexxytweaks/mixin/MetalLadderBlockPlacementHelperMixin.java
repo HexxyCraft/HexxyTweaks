@@ -36,6 +36,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.function.Predicate;
 
+/**
+ * Overrides the item predicate to allow extending metal ladders with vanilla ones.
+ */
 @Mixin(targets = "com.simibubi.create.content.curiosities.deco.MetalLadderBlock$PlacementHelper", remap = false)
 public abstract class MetalLadderBlockPlacementHelperMixin {
 

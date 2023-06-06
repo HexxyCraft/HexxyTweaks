@@ -48,6 +48,10 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 
+/**
+ * Code directly copied from Create since I couldn't find another way to use it.
+ * @see com.simibubi.create.content.curiosities.deco.MetalLadderBlock
+ */
 @Mixin(LadderBlock.class)
 public abstract class LadderBlockMixin extends BlockBehaviourMixin implements IWrenchable {
 

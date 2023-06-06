@@ -27,7 +27,6 @@ package ca.objectobject.hexxycraft.hexxytweaks.common;
 import java.util.function.Predicate;
 
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
-import com.simibubi.create.content.curiosities.deco.MetalLadderBlock;
 import com.simibubi.create.content.curiosities.tools.ExtendoGripItem;
 import com.simibubi.create.foundation.config.AllConfigs;
 import com.simibubi.create.foundation.utility.placement.IPlacementHelper;
@@ -47,6 +46,10 @@ import net.minecraft.world.phys.BlockHitResult;
 
 import static net.minecraft.world.level.block.LadderBlock.FACING;
 
+/**
+ * Code directly copied from Create since I couldn't figure out how to get access to it.
+ * @see com.simibubi.create.content.curiosities.deco.MetalLadderBlock.PlacementHelper
+ */
 @MethodsReturnNonnullByDefault
 public class LadderPlacementHelper implements IPlacementHelper {
 

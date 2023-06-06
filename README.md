@@ -4,8 +4,7 @@ Tweaks for the HexxyCraft modpack.
 
 ## Tweaks
 
-* Added the placement helper from metal ladders to vanilla ladders.
-* Made vanilla ladders wrenchable.
+* Adds the placement helper from metal ladders to vanilla ladders, and makes vanilla ladders wrenchable.
 
 ## Icon
 
