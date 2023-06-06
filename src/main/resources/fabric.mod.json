@@ -26,5 +26,10 @@
     "fabric-api": ">=${fabric_api_version}",
     "create": "${create_version}",
     "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/class_2399": ["com/simibubi/create/content/contraptions/wrench/IWrenchable"]
+    }
   }
 }

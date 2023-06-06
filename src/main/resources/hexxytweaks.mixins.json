@@ -4,6 +4,9 @@
   "package": "ca.objectobject.hexxycraft.hexxytweaks.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BlockBehaviourMixin",
+    "LadderBlockMixin",
+    "MetalLadderBlockPlacementHelperMixin"
   ],
   "client": [
     "MinecraftMixin"

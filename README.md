@@ -4,9 +4,12 @@ Tweaks for the HexxyCraft modpack.
 
 ## Tweaks
 
-TODO
+* Added the placement helper from metal ladders to vanilla ladders.
+* Made vanilla ladders wrenchable.
 
 ## Icon
+
+<img src="src/main/resources/assets/hexxytweaks/icon.png" alt="Hexxy surrounded by hand-drawn cogwheel" width="128" />
 
 Hexxy was created by ClockworkVulpine on Discord.
 
