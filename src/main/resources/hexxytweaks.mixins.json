@@ -8,9 +8,6 @@
     "LadderBlockMixin",
     "MetalLadderBlockPlacementHelperMixin"
   ],
-  "client": [
-    "MinecraftMixin"
-  ],
   "injectors": {
     "defaultRequire": 1
   }

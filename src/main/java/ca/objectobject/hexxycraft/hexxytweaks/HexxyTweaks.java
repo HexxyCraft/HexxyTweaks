@@ -17,7 +17,7 @@ public class HexxyTweaks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Create addon mod {} is loading alongside Create {}!", NAME, Create.VERSION);
+		LOGGER.info("{} is loading alongside Create {}!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(
 				() -> () -> "{} is accessing Porting Lib from the client!",
 				() -> () -> "{} is accessing Porting Lib from the server!"

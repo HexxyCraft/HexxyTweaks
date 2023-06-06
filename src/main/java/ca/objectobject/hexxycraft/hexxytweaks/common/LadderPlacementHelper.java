@@ -55,8 +55,7 @@ public class LadderPlacementHelper implements IPlacementHelper {
 
 	@Override
 	public Predicate<ItemStack> getItemPredicate() {
-		return i -> i.getItem() instanceof BlockItem
-				&& ((BlockItem) i.getItem()).getBlock() instanceof LadderBlock;
+		return i -> i.getItem() instanceof BlockItem bItem && bItem.getBlock() instanceof LadderBlock;
 	}
 
 	@Override
@@ -98,8 +97,7 @@ public class LadderPlacementHelper implements IPlacementHelper {
 		if (!state.canSurvive(world, newPos))
 			return PlacementOffset.fail();
 
-		if (newState.getMaterial()
-				.isReplaceable())
+		if (newState.getMaterial().isReplaceable())
 			return PlacementOffset.success(newPos, bState -> bState.setValue(FACING, state.getValue(FACING)));
 		return PlacementOffset.fail();
 	}

@@ -44,8 +44,7 @@ public abstract class MetalLadderBlockPlacementHelperMixin {
 
 	@Inject(method = "getItemPredicate", at = @At("RETURN"), cancellable = true)
 	private void getItemPredicateReturnMixin(CallbackInfoReturnable<Predicate<ItemStack>> cir) {
-		cir.setReturnValue(i -> i.getItem() instanceof BlockItem
-				&& ((BlockItem) i.getItem()).getBlock() instanceof LadderBlock);
+		cir.setReturnValue(i -> i.getItem() instanceof BlockItem bItem && bItem.getBlock() instanceof LadderBlock);
 	}
 
 }
