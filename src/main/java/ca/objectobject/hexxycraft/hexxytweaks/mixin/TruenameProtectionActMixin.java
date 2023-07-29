@@ -4,7 +4,9 @@ import java.util.UUID;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer;
 
@@ -17,9 +19,9 @@ public class TruenameProtectionActMixin {
     private static UUID nullifyUUID(UUID owner){
         return null;
     }
-    // @Inject (method="<init>(Lnet/minecraft/server/level/ServerLevel;Ljava/util/UUID;)V", 
-    //     at=@At("HEAD"))
-    // private static void nullifyUUID(CallbackInfo ci, @Local LocalRef<UUID> ownerRef){
-    //     ownerRef.set(null);
-    // }
+
+    @Inject(method="getUUID()Ljava/util/UUID;", at=@At("HEAD"), cancellable=true)
+    private void redirectGetUuid(CallbackInfoReturnable<UUID> cir){
+        cir.setReturnValue(DeployerFakePlayer.fallbackID);
+    }
 }
