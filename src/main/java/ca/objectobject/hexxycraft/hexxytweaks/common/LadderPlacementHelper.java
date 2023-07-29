@@ -27,10 +27,10 @@ package ca.objectobject.hexxycraft.hexxytweaks.common;
 import java.util.function.Predicate;
 
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
-import com.simibubi.create.content.curiosities.tools.ExtendoGripItem;
-import com.simibubi.create.foundation.config.AllConfigs;
-import com.simibubi.create.foundation.utility.placement.IPlacementHelper;
-import com.simibubi.create.foundation.utility.placement.PlacementOffset;
+import com.simibubi.create.content.equipment.extendoGrip.ExtendoGripItem;
+import com.simibubi.create.foundation.placement.IPlacementHelper;
+import com.simibubi.create.foundation.placement.PlacementOffset;
+import com.simibubi.create.infrastructure.config.AllConfigs;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -42,9 +42,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.LadderBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.phys.BlockHitResult;
-
-import static net.minecraft.world.level.block.LadderBlock.FACING;
 
 /**
  * Code directly copied from Create since I couldn't figure out how to get access to it.
@@ -80,7 +79,7 @@ public class LadderPlacementHelper implements IPlacementHelper {
 									 BlockHitResult ray) {
 		Direction dir = player.getXRot() < 0 ? Direction.UP : Direction.DOWN;
 
-		int range = AllConfigs.SERVER.curiosities.placementAssistRange.get();
+		int range = AllConfigs.server().equipment.placementAssistRange.get();
 		if (player != null) {
 			AttributeInstance reach = player.getAttribute(ReachEntityAttributes.REACH);
 			if (reach != null && reach.hasModifier(ExtendoGripItem.singleRangeAttributeModifier))
@@ -98,7 +97,7 @@ public class LadderPlacementHelper implements IPlacementHelper {
 			return PlacementOffset.fail();
 
 		if (newState.getMaterial().isReplaceable())
-			return PlacementOffset.success(newPos, bState -> bState.setValue(FACING, state.getValue(FACING)));
+			return PlacementOffset.success(newPos, bState -> bState.setValue(BlockStateProperties.FACING, state.getValue(BlockStateProperties.FACING)));
 		return PlacementOffset.fail();
 	}
 
