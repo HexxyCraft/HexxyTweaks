@@ -24,22 +24,21 @@ SOFTWARE.
 
 package ca.objectobject.hexxycraft.hexxytweaks.mixin;
 
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.ItemStack;
-
-import net.minecraft.world.level.block.LadderBlock;
+import java.util.function.Predicate;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import java.util.function.Predicate;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.LadderBlock;
 
 /**
  * Overrides the item predicate to allow extending metal ladders with vanilla ones.
  */
-@Mixin(targets = "com.simibubi.create.content.curiosities.deco.MetalLadderBlock$PlacementHelper", remap = false)
+@Mixin(targets = "com.simibubi.create.content.decoration.MetalLadderBlock$PlacementHelper", remap = false)
 public abstract class MetalLadderBlockPlacementHelperMixin {
 
 	@Inject(method = "getItemPredicate", at = @At("RETURN"), cancellable = true)
