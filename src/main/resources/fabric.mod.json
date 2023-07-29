@@ -5,7 +5,8 @@
   "name": "HexxyTweaks",
   "description": "Tweaks for the HexxyCraft modpack.",
   "authors": [
-    "object-Object"
+    "object-Object",
+    "samsthenerd"
   ],
   "contact": {
     "sources": "https://github.com/HexxyCraft/HexxyTweaks"
@@ -29,7 +30,7 @@
   },
   "custom": {
     "loom:injected_interfaces": {
-      "net/minecraft/class_2399": ["com/simibubi/create/content/contraptions/wrench/IWrenchable"]
+      "net/minecraft/class_2399": ["com/simibubi/create/content/equipment/wrench/IWrenchable"]
     }
   }
 }
