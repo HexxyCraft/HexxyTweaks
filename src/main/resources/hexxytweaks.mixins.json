@@ -8,6 +8,7 @@
     "LadderBlockMixin",
     "MetalLadderBlockPlacementHelperMixin",
     "SignBlockEntityMixin"
+    "TruenameProtectionActMixin"
   ],
   "injectors": {
     "defaultRequire": 1
