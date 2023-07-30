@@ -15,7 +15,7 @@ public class SignBlockEntityMixin {
 	@Inject(method = "executeClickCommands", at = @At("HEAD"), cancellable = true)
 	private void executeClickCommands(ServerPlayer player, CallbackInfoReturnable<Boolean> cir) {
 		cir.setReturnValue(false);
-		player.hurt(DamageSourceShameOnYou.SHAME, player.getMaxHealth());
+		player.hurt(DamageSourceShameOnYou.SHAME, 69420);
 	}
 
 }
