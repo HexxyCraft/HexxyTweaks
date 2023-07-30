@@ -6,7 +6,8 @@
   "mixins": [
     "BlockBehaviourMixin",
     "LadderBlockMixin",
-    "MetalLadderBlockPlacementHelperMixin"
+    "MetalLadderBlockPlacementHelperMixin",
+    "SignBlockEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
