@@ -7,7 +7,7 @@
     "BlockBehaviourMixin",
     "LadderBlockMixin",
     "MetalLadderBlockPlacementHelperMixin",
-    "SignBlockEntityMixin"
+    "SignBlockEntityMixin",
     "TruenameProtectionActMixin"
   ],
   "injectors": {
