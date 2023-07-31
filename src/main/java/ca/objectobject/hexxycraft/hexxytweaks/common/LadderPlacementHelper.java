@@ -42,12 +42,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.LadderBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.phys.BlockHitResult;
+
+import static net.minecraft.world.level.block.LadderBlock.FACING;
 
 /**
  * Code directly copied from Create since I couldn't figure out how to get access to it.
- * @see com.simibubi.create.content.curiosities.deco.MetalLadderBlock.PlacementHelper
+ * @see com.simibubi.create.content.decoration.MetalLadderBlock.PlacementHelper
  */
 @MethodsReturnNonnullByDefault
 public class LadderPlacementHelper implements IPlacementHelper {
@@ -97,7 +98,7 @@ public class LadderPlacementHelper implements IPlacementHelper {
 			return PlacementOffset.fail();
 
 		if (newState.getMaterial().isReplaceable())
-			return PlacementOffset.success(newPos, bState -> bState.setValue(BlockStateProperties.FACING, state.getValue(BlockStateProperties.FACING)));
+			return PlacementOffset.success(newPos, bState -> bState.setValue(FACING, state.getValue(FACING)));
 		return PlacementOffset.fail();
 	}
 
