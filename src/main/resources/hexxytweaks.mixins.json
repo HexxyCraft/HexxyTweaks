@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "BlockBehaviourMixin",
+    "IExceptionToTheTruenameProtectionActMixin",
     "LadderBlockMixin",
     "MetalLadderBlockPlacementHelperMixin",
     "SignBlockEntityMixin",
