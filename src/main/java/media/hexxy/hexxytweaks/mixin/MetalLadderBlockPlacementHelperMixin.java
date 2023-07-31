@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-package ca.objectobject.hexxycraft.hexxytweaks.mixin;
+package media.hexxy.hexxytweaks.mixin;
 
 import java.util.function.Predicate;
 

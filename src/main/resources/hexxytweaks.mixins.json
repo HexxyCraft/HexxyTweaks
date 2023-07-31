@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "ca.objectobject.hexxycraft.hexxytweaks.mixin",
+  "package": "media.hexxy.hexxytweaks.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "BlockBehaviourMixin",

@@ -1,6 +1,6 @@
-package ca.objectobject.hexxycraft.hexxytweaks.mixin;
+package media.hexxy.hexxytweaks.mixin;
 
-import ca.objectobject.hexxycraft.hexxytweaks.HexxyTweaks;
+import media.hexxy.hexxytweaks.HexxyTweaks;
 
 import com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer;
 

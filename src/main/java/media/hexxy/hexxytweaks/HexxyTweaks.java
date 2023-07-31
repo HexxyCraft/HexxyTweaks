@@ -1,4 +1,4 @@
-package ca.objectobject.hexxycraft.hexxytweaks;
+package media.hexxy.hexxytweaks;
 
 import com.simibubi.create.Create;
 

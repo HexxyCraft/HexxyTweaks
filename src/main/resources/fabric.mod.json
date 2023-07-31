@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "ca.objectobject.hexxycraft.hexxytweaks.HexxyTweaks"
+      "media.hexxy.hexxytweaks.HexxyTweaks"
     ]
   },
   "mixins": [

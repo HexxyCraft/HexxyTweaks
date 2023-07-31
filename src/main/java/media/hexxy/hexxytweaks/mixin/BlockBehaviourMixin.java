@@ -1,4 +1,4 @@
-package ca.objectobject.hexxycraft.hexxytweaks.mixin;
+package media.hexxy.hexxytweaks.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

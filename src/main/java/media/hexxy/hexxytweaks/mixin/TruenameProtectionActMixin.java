@@ -1,4 +1,4 @@
-package ca.objectobject.hexxycraft.hexxytweaks.mixin;
+package media.hexxy.hexxytweaks.mixin;
 
 import java.util.UUID;
 
