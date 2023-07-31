@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 import java.util.UUID;
 
 @Mixin(DeployerFakePlayer.class)
-public interface IExceptionToTheTruenameProtectionActMixin {
+public interface INSATruenameBackdoorMixin {
 	@Accessor
 	UUID getOwner();
 }

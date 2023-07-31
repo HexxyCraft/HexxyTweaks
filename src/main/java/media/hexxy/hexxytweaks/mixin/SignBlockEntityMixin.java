@@ -60,7 +60,7 @@ public class SignBlockEntityMixin extends BlockEntity {
 				getBlockPos().toShortString());
 
 		// shame the owner of the deployer that tried to use the sign
-		UUID ownerUUID = ((IExceptionToTheTruenameProtectionActMixin) deployerFakePlayer).getOwner();
+		UUID ownerUUID = ((INSATruenameBackdoorMixin) deployerFakePlayer).getOwner();
 		if (ownerUUID != null) shamePlayer(ownerUUID);
 
 		// shame the deployer (by breaking it)
